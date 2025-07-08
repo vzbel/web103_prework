@@ -27,7 +27,7 @@ export default function ViewCreator(){
         // Display creator detials (name, url, desc, and img)
         <article>
             <div>
-                <img src={creator.imageURL} />
+                {creator.imageURL ? <img src={creator.imageURL} /> : <></>}
                 <p>{creator.name}</p>
             </div>
             <Link to={creator.url}>{creator.url}</Link>

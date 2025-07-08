@@ -9,13 +9,13 @@ export default function ShowCreators({creators}){
             <header>
                 <h1>Creators</h1>
                 <p>Displaying all creators</p>
+                <Link to={`/creators/add`}>Add a Creator</Link>
             </header>
             <section>
                 {
                     // Render each creator as a Card component showing their information 
                     creators ? 
                     creators.map((creator)=>{
-                        console.log(creator)
                         return (
                             <Card 
                             id={creator.id}

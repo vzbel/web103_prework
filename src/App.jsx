@@ -13,12 +13,12 @@ import { useEffect, useState } from 'react'
 function App() {
   // Get creators data from DB
   const [creators, setCreators] = useState(null)
+  async function getCreators(){
+    const {data} = await supabase.from("creators").select()
+    setCreators(data)
+  }
   useEffect(()=>{
-      async function getCreators(){
-        const {data} = await supabase.from("creators").select()
-        setCreators(data)
-      }
-      getCreators()
+    getCreators()
   }, [])
 
   // Routes
@@ -41,7 +41,7 @@ function App() {
     {
       // add a new creator
       path: "/creators/add",
-      element: <AddCreator />
+      element: <AddCreator getCreators={getCreators}/>
     }
   ])
   return element

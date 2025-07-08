@@ -8,6 +8,10 @@ body{
   font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
 }
 
-a{
+a, input, textarea, button{
   display: block;
+}
+
+textarea{
+  resize: none;
 }

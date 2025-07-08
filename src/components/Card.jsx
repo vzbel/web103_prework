@@ -5,13 +5,13 @@ import { Link } from "react-router";
 export default function Card({id, name, url, description, imageURL}){
     return (
         <article>
-            <img src={imageURL} />
+            {imageURL ? <img src={imageURL} /> : <></>}
             <div>
                 <p>{name}</p>
                 {/* Link to creator's detail page */}
                 <Link to={`/creators/${id}`}>details</Link> 
                 {/* Link to creator's website */}
-                <Link to={url} target="_blank">{url}</Link>
+                <a href={url} target="_blank">{url}</a>
             </div>
             <p>{description}</p>
         </article>
