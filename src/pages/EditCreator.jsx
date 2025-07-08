@@ -43,6 +43,17 @@ export default function EditCreator({getCreators}){
         }))
     }
 
+    // Delete a creator from the DB 
+    async function deleteCreator(){
+        const {data, error} = await supabase
+            .from('creators')
+            .delete()
+            .eq('id', id)
+        // Navigate home
+        await getCreators()
+        navigate('/')
+    }
+
     return (
         creator ? 
         <form action={handleForm}>
@@ -61,6 +72,7 @@ export default function EditCreator({getCreators}){
             <input type="text" name="imageURL" id="imageURL" value={creator.imageURL} onChange={handleChange}/>
 
             <button>Submit Edits</button>
+            <button type="button" onClick={deleteCreator}>Delete Creator</button>
         </form>
         :
         <>Loading creator data...</>
