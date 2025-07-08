@@ -1,5 +1,7 @@
 import Card from "../components/Card";
 
+import { Link } from "react-router";
+
 // Page showing all creators
 export default function ShowCreators({creators}){
     return (
@@ -16,6 +18,7 @@ export default function ShowCreators({creators}){
                         console.log(creator)
                         return (
                             <Card 
+                            id={creator.id}
                             name={creator.name}
                             url={creator.url}
                             description={creator.description}
@@ -25,7 +28,7 @@ export default function ShowCreators({creators}){
                         );
                     })
                     :
-                    <></>
+                    <>There are no creators yet.</>
                 }
             </section>
         </main>
