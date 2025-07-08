@@ -31,6 +31,7 @@ export default function ViewCreator(){
                 <p>{creator.name}</p>
             </div>
             <Link to={creator.url}>{creator.url}</Link>
+            <Link to={`/creators/${id}/edit`}>edit creator</Link>
             <p>{creator.description}</p>
         </article>
         :
