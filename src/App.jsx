@@ -36,7 +36,7 @@ function App() {
     {
       // edit a creator's page by id
       path: "/creators/:id/edit",
-      element: <EditCreator />
+      element: <EditCreator getCreators={getCreators}/>
     },
     {
       // add a new creator

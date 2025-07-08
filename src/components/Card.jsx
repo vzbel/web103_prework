@@ -12,6 +12,8 @@ export default function Card({id, name, url, description, imageURL}){
                 <Link to={`/creators/${id}`}>details</Link> 
                 {/* Link to creator's website */}
                 <a href={url} target="_blank">{url}</a>
+                {/* Link to edit the creator's information */}
+                <Link to={`/creators/${id}/edit`}>edit creator</Link>
             </div>
             <p>{description}</p>
         </article>

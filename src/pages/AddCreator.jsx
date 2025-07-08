@@ -19,7 +19,7 @@ export default function AddCreator({getCreators}){
         if(error){
             alert('Error adding creator: try again')
         }else{
-            getCreators() // Get creators to make sure the list is updated on navigate
+            await getCreators() // Get creators to make sure the list is updated on navigate
             navigate('/') // Navigate to homepage
         }
     }
