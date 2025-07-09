@@ -2,6 +2,11 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  /* outline: 1px solid grey; */
+}
+
+:root{
+  --primary: #E9A719;
 }
 
 body{
@@ -12,6 +17,14 @@ a, input, textarea, button{
   display: block;
 }
 
+a{
+  text-decoration: none;
+}
+
 textarea{
   resize: none;
+}
+
+.flex{
+  display: flex;
 }

@@ -2,14 +2,18 @@ import Card from "../components/Card";
 
 import { Link } from "react-router";
 
+import './ShowCreators.css';
+
 // Page showing all creators
 export default function ShowCreators({creators}){
     return (
         <main>
-            <header>
-                <h1>Creators</h1>
-                <p>Displaying all creators</p>
-                <Link to={`/creators/add`}>Add a Creator</Link>
+            <header className="flex">
+                <div>
+                    <h1>SoundCloud DB</h1>
+                    <p>Discover musicians and producers across SoundCloud!</p>
+                    <Link to={`/creators/add`} className="add-creator">Add a Creator</Link>
+                </div>
             </header>
             <section>
                 {
