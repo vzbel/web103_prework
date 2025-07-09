@@ -7,7 +7,7 @@ import './Card.css';
 export default function Card({id, name, url, description, imageURL}){
     return (
         <article className="flex card">
-            {imageURL ? <img src={imageURL} className="card-img"/> : <img src="https://upload.wikimedia.org/wikipedia/commons/a/ac/Default_pfp.jpg" className="card-img"/>}
+            {imageURL ? <img src={imageURL} className="card-img"/> : <img src="https://i.pinimg.com/474x/43/0f/07/430f07ae232540762bb76d3da5e7e5e6.jpg" className="card-img"/>}
             <div className="card-inner">
                 <div className="card-header flex">
                     <div className="flex">
