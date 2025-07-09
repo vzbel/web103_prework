@@ -71,7 +71,7 @@ export default function EditCreator({getCreators}){
 
             {/* imageURL is optional */}
             <label htmlFor="imageURL">Image URL (optional)</label>
-            <input type="text" name="imageURL" id="imageURL" value={creator.imageURL} onChange={handleChange}/>
+            <input type="text" name="imageURL" id="imageURL" value={creator.imageURL ? creator.imageURL : ""} onChange={handleChange}/>
 
             <button className="edit-submit">Submit Edits</button>
             <button className="delete-btn" type="button" onClick={deleteCreator}>Delete Creator (PERMANENT)</button>
