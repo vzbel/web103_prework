@@ -30,3 +30,16 @@ header > div > p{
     margin-inline: auto;
     color: white;
 }
+
+.creator-grid{
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+}
+
+.creator-grid > div{
+    max-width: 1200px;
+    flex-wrap: wrap;
+    margin-inline: auto;
+    justify-content: center;
+    gap: 2rem;
+}

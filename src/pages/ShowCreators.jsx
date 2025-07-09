@@ -15,25 +15,27 @@ export default function ShowCreators({creators}){
                     <Link to={`/creators/add`} className="add-creator">Add a Creator</Link>
                 </div>
             </header>
-            <section>
-                {
-                    // Render each creator as a Card component showing their information 
-                    creators ? 
-                    creators.map((creator)=>{
-                        return (
-                            <Card 
-                            id={creator.id}
-                            name={creator.name}
-                            url={creator.url}
-                            description={creator.description}
-                            imageURL={creator.imageURL}
-                            key={creator.name}
-                            />
-                        );
-                    })
-                    :
-                    <>There are no creators yet.</>
-                }
+            <section className="creator-grid">
+                <div className="flex">
+                    {
+                        // Render each creator as a Card component showing their information 
+                        creators ? 
+                        creators.map((creator)=>{
+                            return (
+                                <Card 
+                                id={creator.id}
+                                name={creator.name}
+                                url={creator.url}
+                                description={creator.description}
+                                imageURL={creator.imageURL}
+                                key={creator.name}
+                                />
+                            );
+                        })
+                        :
+                        <>There are no creators yet.</>
+                    }
+                </div>
             </section>
         </main>
     );
