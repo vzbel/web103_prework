@@ -2,6 +2,8 @@
 import { supabase } from "../client";
 import { useNavigate } from "react-router";
 
+import './AddCreator.css';
+
 export default function AddCreator({getCreators}){
     const navigate = useNavigate()
 
@@ -25,7 +27,8 @@ export default function AddCreator({getCreators}){
     }
 
     return (
-        <form action={handleForm}>
+        <form action={handleForm} className="add-form flex">
+            <p className="form-title">Add a Creator</p>
             <label htmlFor="name">Name</label>
             <input type="text" name="name" id="name" required/>
 
