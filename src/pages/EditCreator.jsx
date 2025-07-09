@@ -4,6 +4,8 @@ import { useState, useEffect } from "react";
 import { useNavigate } from "react-router";
 import { useParams } from "react-router";
 
+import './EditCreator.css';
+
 export default function EditCreator({getCreators}){
     const navigate = useNavigate()
 
@@ -56,8 +58,8 @@ export default function EditCreator({getCreators}){
 
     return (
         creator ? 
-        <form action={handleForm}>
-            <p>Edit Creator</p>
+        <form action={handleForm} className="edit-form flex">
+            <p className="form-title">Edit Creator</p>
             <label htmlFor="name">Name</label>
             <input type="text" name="name" id="name" value={creator.name} onChange={handleChange}/>
 
@@ -71,8 +73,8 @@ export default function EditCreator({getCreators}){
             <label htmlFor="imageURL">Image URL (optional)</label>
             <input type="text" name="imageURL" id="imageURL" value={creator.imageURL} onChange={handleChange}/>
 
-            <button>Submit Edits</button>
-            <button type="button" onClick={deleteCreator}>Delete Creator</button>
+            <button className="edit-submit">Submit Edits</button>
+            <button className="delete-btn" type="button" onClick={deleteCreator}>Delete Creator (PERMANENT)</button>
         </form>
         :
         <>Loading creator data...</>
