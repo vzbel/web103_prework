@@ -43,3 +43,14 @@ header > div > p{
     justify-content: center;
     gap: 2rem;
 }
+
+footer{
+    background-color: var(--primary);
+    position: fixed;
+    inset: 0;
+    top: 96%;
+    height: 40px;
+    color: white;
+    justify-content: center;
+    align-items: center;
+}

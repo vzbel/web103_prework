@@ -37,6 +37,7 @@ export default function ShowCreators({creators}){
                     }
                 </div>
             </section>
+            <footer className="flex">Soundcloud DB ©</footer>
         </main>
     );
 }
