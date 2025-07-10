@@ -32,17 +32,23 @@ The following **optional** features are implemented:
 
 The following **additional** features are implemented:
 
-- [ ] List anything else that you added to improve the site's functionality!
 
 ## Video Walkthrough
 
 Here's a walkthrough of implemented required features:
 
-👉🏿<img src='http://i.imgur.com/link/to/your/gif/file.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+<div>
+    <a href="https://www.loom.com/share/7ba632f9de6141d888e4a2153a448f98">
+      <p>Vite + React - 10 July 2025 - Watch Video</p>
+    </a>
+    <a href="https://www.loom.com/share/7ba632f9de6141d888e4a2153a448f98">
+      <img style="max-width:300px;" src="https://cdn.loom.com/sessions/thumbnails/7ba632f9de6141d888e4a2153a448f98-978027cdb7426882-full-play.gif">
+    </a>
+  </div>
 
 <!-- Replace this with whatever GIF tool you used! -->
 
-GIF created with ... 👉🏿 GIF tool here
+Video created with Loom 
 
 <!-- Recommended tools:
 [Kap](https://getkap.co/) for macOS
